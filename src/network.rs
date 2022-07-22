@@ -4,11 +4,11 @@ use std::time::Duration;
 
 const BUFF_MAX: usize = 1204;
 
-#[derive(Clone,Copy,PartialEq)]
+#[derive(Clone, Copy, PartialEq)]
 pub enum PType {
     Ping,
     Data,
-    Command
+    Command,
 }
 
 pub struct Stream {
