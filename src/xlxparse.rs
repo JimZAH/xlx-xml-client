@@ -1,8 +1,7 @@
-
 // This is a horrible fix to something that shouldn't be an issue!
 // XLXD uses illegal spaces in XML tags so we need to remove/replace
 // them before we pass off to the XML parser
-pub fn parse(buf: &mut [u8]){ 
+pub fn parse(buf: &mut [u8]) {
     for i in 0..buf.len() {
         if i == 0 {
             continue;
